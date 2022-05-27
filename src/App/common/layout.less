@@ -1,0 +1,65 @@
+
+.layout-nav-box {
+    display: flex;
+    padding: 6px 12px;
+    > .left,
+    > .right {
+        flex: 1;
+    }
+    > .right {
+        text-align: right;
+       >a{
+           margin-left: 16px;
+           font-weight: 600;
+           font-size: .7rem;
+           user-select: none;
+       }
+    }
+    .current-in{
+        height: 32px;
+        margin-left: 16px;
+        font-size: .7rem;
+        line-height: 32px;
+    }
+}
+
+.ant-dropdown {
+    display: block;
+    width: 120px;
+    padding: 8px 12px;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+    margin-top: 12px;
+    li {
+        line-height: 32px;
+        font-size: .7rem;
+        color: #333;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}
+.qrCode{
+    display: block;
+    width: 200px;
+    height: 260px;
+    background-image: url(../../images/qrcode-android.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.ant-dropdown-placement-bottomRight{
+    width: 200px;
+}
+
+// loadingbox单独设置
+.loading-box{
+    height: 100%;
+    background-color: #fff;
+    padding: 310px 550px;
+
+}

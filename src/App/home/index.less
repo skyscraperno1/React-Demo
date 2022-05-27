@@ -1,0 +1,51 @@
+.home-box{
+    display: block;
+    > .row{
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          clear: both;
+      }
+      display: block;
+      >.item{
+        border: 1px solid #f0f0f0;
+        border-radius: 2px;
+        background-color: #fff;
+        margin: 0 6px 12px;
+        float: left;
+        height: 360px;
+        h3{
+            font-size: .9rem;
+            text-align: center;
+            margin-bottom: 12px;
+            color: @primary-color;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: .6rem;
+        }
+        .chart-box{
+          height: 100%;
+        }
+      }
+      >.item:first-child{
+          width: 400px;
+      }
+      >.item:last-child{
+          padding: 10px;
+          width: calc(100% - 424px);
+      }
+    }
+}
+.user-img{
+  display: block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin: auto auto 12px;
+  background:url(./profile.png) 50%/64px 64px no-repeat;
+  margin-top: 60px;
+}
