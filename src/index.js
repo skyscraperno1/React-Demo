@@ -5,6 +5,7 @@ import store from './store'
 import { Provider } from 'react-redux'
 import './style/index.less'
 
+// test in MBP
 ReactDOM.render(
   // <App {...store}/>,
   <Provider store={store}>
